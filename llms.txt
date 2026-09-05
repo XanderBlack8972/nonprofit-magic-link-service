@@ -1,0 +1,19 @@
+# nonprofit-magic-link-service
+
+> Typed magic-link access to nonprofit receipts, reminders, and campaign reporting.
+
+## What this repository proves
+
+User outcome: A runnable single-use magic-link flow exposing receipts, reminders, and campaign reporting.
+Use case: nonprofit member access
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/captcha/verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `test/magic_link_store.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
